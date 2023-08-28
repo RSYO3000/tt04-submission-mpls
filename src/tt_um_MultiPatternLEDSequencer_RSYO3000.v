@@ -8,7 +8,9 @@ module tt_um_MultiPatternLEDSequencer_RSYO3000 (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
-
+assign uio_out = 0;
+assign uio_oe = 0;
+    
 MultiPatternLEDSequencer M0
 (
     .clk_10MHz(clk),
