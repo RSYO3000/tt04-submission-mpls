@@ -5,7 +5,7 @@ module PLL_10MHztoNHz (
     output reg clk_pll
 );
 
-reg [21:0] counter = 0;
+reg [23:0] counter;
 
 always @(posedge clk_10MHz or negedge rstn) begin
     if (!rstn) begin
@@ -13,10 +13,10 @@ always @(posedge clk_10MHz or negedge rstn) begin
         clk_pll <= 0;
     end else if (counter == 0) begin
         case (clk_selector)
-            2'b00: counter <= 10_000_000; // 10_000_000 cycles of 10MHz = 1s, 1Hz
-            2'b01: counter <= 5_000_000;  // 5_000_000 cycles of 10MHz = 500ms, 2Hz
-            2'b10: counter <= 1_000_000;  // 1_000_000 cycles of 10MHz = 100ms, 10Hz
-            2'b11: counter <= 20_000_000; // 20_000_000 cycles of 10MHz = 2s, 0.5Hz
+            2'b00: counter <= 4_999_999; // 1Hz
+            2'b01: counter <= 2_499_999; // 2Hz
+            2'b10: counter <= 499_999;  // 10Hz
+            2'b11: counter <= 99_999; // 50Hz
             default: counter <= 0;
         endcase
         clk_pll <= ~clk_pll;
