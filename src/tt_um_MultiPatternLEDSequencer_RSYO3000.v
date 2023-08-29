@@ -16,7 +16,7 @@ MultiPatternLEDSequencer M0
     .clk_10MHz(clk),
     .rstn(rst_n),
     .clk_selector(ui_in[1:0]),
-    .pattern_sel(ui_in[5:2]),
+    .pattern_sel(ui_in[6:2]),
     .led_out(uo_out)
 );
 

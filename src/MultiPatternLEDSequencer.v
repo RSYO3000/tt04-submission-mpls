@@ -2,7 +2,7 @@ module MultiPatternLEDSequencer (
     input wire clk_10MHz,
     input wire rstn,
     input wire [1:0] clk_selector,
-    input wire [3:0] pattern_sel,
+    input wire [4:0] pattern_sel,
     output wire [7:0] led_out
 );
 
