@@ -6,6 +6,14 @@ The **Multi-Pattern LED Sequencer** module generates a variety of LED patterns u
 
 ![MPLS](./img/MPLS.drawio.png)
 
+## MPLS 31 Pattern Showcase for TT4 in YouTube
+
+In the following video, you can watch a showcase of the 31 patterns in the MPLS described in further sections of this README
+
+**(PD. It has non-copyrighted music from YouTube that it's kinda loud in my opinion, lower your volume or mute it before watching if wearing headphones for safety!)**
+
+https://youtu.be/fap38elbNSM
+
 ## How It Works
 
 The project consists of several Verilog modules that work together to create a variety of LED patterns:
