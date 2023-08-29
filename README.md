@@ -28,11 +28,11 @@ The project consists of several Verilog modules that work together to create a v
 
   - The `demo_counter` is responsible for cycling through all available patterns when `pattern_sel` is set to 31.
 
-  - Both `pattern_counter` and `oh_counter` generate specific timing sequences required for different LED patterns.
+  - Both `binary_counter` and `onehot_counter` generate specific timing sequences required for different LED patterns.
 
-  - The `lfsr_reg` implements a Linear Feedback Shift Register (LFSR) to generate pseudo-random sequences.
+  - The `lfsr_counter` implements a Linear Feedback Shift Register (LFSR) to generate pseudo-random sequences.
 
-  - A `case` statement selects the pattern to be displayed based on the value of `pattern_sel`. There are 30 available patterns, each producing a unique LED showcase.
+  - A `case` statement in the MPLS internal logic selects the pattern to be displayed based on the value of `pattern_sel`. There are 30 available patterns, each producing a unique LED showcase.
 
 
 ## LED Patterns
