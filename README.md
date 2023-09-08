@@ -5,7 +5,6 @@
 # TinyTapeout4 Project: MPLS (Multi-Pattern LED Sequencer)
 
 
-
 The **Multi-Pattern LED Sequencer** module generates a variety of LED patterns using a combination of counters, feedback loops, and pattern selection logic. This README provides an overview of the available LED patterns.
 
 
